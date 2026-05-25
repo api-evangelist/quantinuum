@@ -1,0 +1,358 @@
+aid: quantinuum
+name: Quantinuum
+description: >-
+  Quantinuum is an integrated quantum computing company formed by the 2021
+  merger of Honeywell Quantum Solutions and Cambridge Quantum. It builds
+  trapped-ion (QCCD) quantum computers — the H1, H2, and Helios System Models —
+  and develops the full software stack that runs on them: the Nexus cloud
+  platform, the TKET quantum compiler, the InQuanto computational chemistry
+  package, the lambeq quantum natural language processing toolkit, the Guppy
+  quantum programming language, the Selene emulation framework, and the Quantum
+  Origin verifiable randomness service. Programmatic access to Quantinuum
+  systems is delivered through the Nexus platform (Python client `qnexus` plus a
+  REST/OpenAPI surface) and via partner clouds; circuits are described in
+  OpenQASM 2.0 and the Quantum Intermediate Representation (QIR).
+type: Index
+position: Producing
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Quantum Computing
+  - Trapped Ion
+  - Quantum Hardware
+  - Quantum Software
+  - Quantum Compiler
+  - Quantum Chemistry
+  - Quantum Natural Language Processing
+  - Quantum Random Number Generator
+  - QIR
+  - OpenQASM
+  - Cloud Platform
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/quantinuum/refs/heads/main/apis.yml
+created: '2026-05-24'
+modified: '2026-05-24'
+specificationVersion: '0.20'
+apis:
+  - aid: quantinuum:nexus
+    name: Quantinuum Nexus
+    description: >-
+      Nexus is Quantinuum's all-in-one quantum computing cloud platform. It
+      brokers access to Quantinuum H-Series hardware (H1, H2, Helios) and to
+      partner backends including IBM Quantum and Amazon Braket, manages
+      projects, teams, roles, quotas, credentials, and linked accounts, and
+      orchestrates job submission, compilation, results retrieval, and circuit
+      visualization. Nexus exposes a Python client (`qnexus`, Apache 2.0) and a
+      REST/OpenAPI surface ("Nexus OpenAPI") covered by the platform's
+      Authentication & Quotas documentation. Jobs are submitted as OpenQASM 2.0
+      or QIR programs and may be compiled and executed against Quantinuum
+      systems or partner backends.
+    humanURL: https://docs.quantinuum.com/nexus/
+    tags:
+      - Quantum Computing
+      - Cloud Platform
+      - Job Submission
+      - Compilation
+      - Projects
+      - Teams
+      - Quotas
+    properties:
+      - type: Documentation
+        url: https://docs.quantinuum.com/nexus/
+      - type: Documentation
+        url: https://docs.quantinuum.com/nexus/trainings/getting_started.html
+      - type: SignUp
+        url: https://nexus.quantinuum.com/auth/login
+      - type: SDK
+        url: https://github.com/Quantinuum/qnexus
+      - type: SDK
+        url: https://pypi.org/project/qnexus/
+  - aid: quantinuum:systems
+    name: Quantinuum Systems (H-Series)
+    description: >-
+      The Quantinuum Systems API exposes the H-Series trapped-ion (QCCD)
+      quantum computers — System Model H1, System Model H2, and the
+      next-generation Helios — for circuit submission. Direct communication
+      with system endpoints occurs via QIR (Quantum Intermediate
+      Representation) or OpenQASM 2.0 payloads, typically brokered through
+      Nexus. The H-Series supports all-to-all qubit connectivity, mid-circuit
+      measurement and reset, parameterized two-qubit operations, and
+      conditional logic.
+    humanURL: https://docs.quantinuum.com/systems/
+    tags:
+      - Quantum Computing
+      - Trapped Ion
+      - QIR
+      - OpenQASM
+      - H-Series
+    properties:
+      - type: Documentation
+        url: https://docs.quantinuum.com/systems/
+      - type: Documentation
+        url: https://docs.quantinuum.com/systems/user_guide/hardware_user_guide/access.html
+      - type: Data
+        url: https://github.com/Quantinuum/quantinuum-hardware-specifications
+      - type: Data
+        url: https://github.com/Quantinuum/quantinuum-hardware-quantum-volume
+      - type: Data
+        url: https://github.com/Quantinuum/quantinuum-hardware-h2-benchmark
+  - aid: quantinuum:tket
+    name: TKET
+    description: >-
+      TKET is Quantinuum's optimizing quantum compiler. The Python interface
+      `pytket` and the C++ core `tket` provide gate-level circuit construction,
+      hardware-agnostic optimization passes, routing, and backend extensions
+      for Quantinuum H-Series, IBM Q (Qiskit), Amazon Braket, IQM, AQT,
+      PennyLane, and others. TKET2 (Rust) is the next-generation compiler
+      built on the HUGR intermediate representation.
+    humanURL: https://docs.quantinuum.com/tket/
+    tags:
+      - Quantum Compiler
+      - Circuit Optimization
+      - Python SDK
+      - HUGR
+    properties:
+      - type: Documentation
+        url: https://docs.quantinuum.com/tket/user-guide/
+      - type: SDK
+        url: https://github.com/Quantinuum/tket
+      - type: SDK
+        url: https://github.com/Quantinuum/tket2
+      - type: SDK
+        url: https://github.com/Quantinuum/pytket-quantinuum
+      - type: SDK
+        url: https://pypi.org/project/pytket/
+      - type: CodeExamples
+        url: https://github.com/Quantinuum/pytket-docs
+  - aid: quantinuum:inquanto
+    name: InQuanto
+    description: >-
+      InQuanto is Quantinuum's computational quantum chemistry platform for
+      molecular and materials simulations on near-term and fault-tolerant
+      quantum computers. It implements VQE, quantum phase estimation, and
+      advanced ansätze/error-mitigation, with integrations to PySCF and other
+      classical chemistry tooling. Licensed to enterprise users and accessed
+      via Python; runs against Quantinuum Systems and emulators through Nexus.
+    humanURL: https://docs.quantinuum.com/inquanto/
+    tags:
+      - Quantum Chemistry
+      - Molecular Simulation
+      - VQE
+      - QPE
+    properties:
+      - type: Documentation
+        url: https://docs.quantinuum.com/inquanto/manual/howto.html
+      - type: Portal
+        url: https://www.quantinuum.com/products-solutions/inquanto
+  - aid: quantinuum:lambeq
+    name: lambeq
+    description: >-
+      lambeq is Quantinuum's open-source Python toolkit for Quantum Natural
+      Language Processing (QNLP). It converts sentences into string diagrams
+      (DisCoCat / DisCoCirc), rewrites them into parameterized quantum
+      circuits, and trains them on classical simulators or Quantinuum
+      hardware. Released under Apache 2.0.
+    humanURL: https://docs.quantinuum.com/lambeq/
+    tags:
+      - Quantum NLP
+      - QNLP
+      - DisCoCat
+      - Python SDK
+    properties:
+      - type: Documentation
+        url: https://docs.quantinuum.com/lambeq/intro.html
+      - type: SDK
+        url: https://github.com/CQCL/lambeq
+      - type: SDK
+        url: https://github.com/Quantinuum/lambeq
+      - type: SDK
+        url: https://pypi.org/project/lambeq/
+  - aid: quantinuum:guppy
+    name: Guppy
+    description: >-
+      Guppy (`guppylang`) is Quantinuum's Pythonic quantum-classical
+      programming language. Guppy programs compile through the HUGR
+      hierarchical intermediate representation and target Quantinuum hardware,
+      Selene emulators, and QIR-compatible backends. Designed for hybrid
+      classical-quantum control flow including conditional logic, loops,
+      and mid-circuit measurement.
+    humanURL: https://docs.quantinuum.com/guppy/
+    tags:
+      - Quantum Programming Language
+      - Hybrid Computation
+      - HUGR
+      - Python
+    properties:
+      - type: Documentation
+        url: https://docs.quantinuum.com/guppy/getting_started.html
+      - type: SDK
+        url: https://github.com/Quantinuum/guppylang
+      - type: SDK
+        url: https://github.com/Quantinuum/hugr
+  - aid: quantinuum:selene
+    name: Selene
+    description: >-
+      Selene is Quantinuum's plugin-extensible emulator for hybrid quantum
+      computation. It simulates the behavior of Quantinuum H-Series hardware
+      including mid-circuit measurement, conditional control flow, and
+      QIR-defined programs, with pluggable noise models and runtime backends.
+    humanURL: https://docs.quantinuum.com/selene/
+    tags:
+      - Emulator
+      - Simulation
+      - Hybrid Computation
+      - QIR
+    properties:
+      - type: Documentation
+        url: https://docs.quantinuum.com/selene/user_guide/overview.html
+      - type: SDK
+        url: https://github.com/Quantinuum/selene
+  - aid: quantinuum:quantum-origin
+    name: Quantum Origin
+    description: >-
+      Quantum Origin is Quantinuum's verifiable quantum random number
+      generation service, delivering cryptographically strong entropy seeded
+      by quantum measurements for use in PKI, key generation, and other
+      security workloads. Available as a hosted cloud API and on-prem
+      appliance.
+    humanURL: https://docs.quantinuum.com/origin/
+    tags:
+      - Quantum Random Number Generator
+      - QRNG
+      - Cryptography
+      - Security
+    properties:
+      - type: Documentation
+        url: https://docs.quantinuum.com/origin/user_guides/introduction/summary.html
+      - type: Portal
+        url: https://www.quantinuum.com/products-solutions/quantum-origin
+  - aid: quantinuum:qermit
+    name: Qermit
+    description: >-
+      Qermit is a Python module for running error-mitigation protocols
+      (probabilistic error cancellation, zero-noise extrapolation,
+      Clifford data regression, dynamical decoupling, etc.) on top of the
+      pytket quantum SDK and Quantinuum/partner backends.
+    humanURL: https://github.com/Quantinuum/Qermit
+    tags:
+      - Error Mitigation
+      - Python SDK
+      - pytket
+    properties:
+      - type: SDK
+        url: https://github.com/Quantinuum/Qermit
+      - type: SDK
+        url: https://pypi.org/project/qermit/
+common:
+  - type: Portal
+    url: https://www.quantinuum.com/
+  - type: Documentation
+    url: https://docs.quantinuum.com/
+  - type: GitHubOrganization
+    url: https://github.com/Quantinuum
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/quantinuum
+  - type: SignUp
+    url: https://nexus.quantinuum.com/auth/login
+  - type: Portal
+    name: Nexus Portal
+    url: https://nexus.quantinuum.com/
+  - type: GettingStarted
+    url: https://docs.quantinuum.com/nexus/trainings/getting_started.html
+  - type: Support
+    name: Quantinuum Customer Support
+    url: mailto:qcsupport@quantinuum.com
+  - type: Blog
+    url: https://www.quantinuum.com/news
+  - type: Publications
+    url: https://github.com/Quantinuum/quantinuum-publications
+  - type: SDK
+    name: pytket (Python)
+    url: https://github.com/Quantinuum/tket
+  - type: SDK
+    name: pytket-quantinuum
+    url: https://github.com/Quantinuum/pytket-quantinuum
+  - type: SDK
+    name: pytket-qiskit
+    url: https://github.com/Quantinuum/pytket-qiskit
+  - type: SDK
+    name: pytket-braket
+    url: https://github.com/Quantinuum/pytket-braket
+  - type: SDK
+    name: pytket-cutensornet
+    url: https://github.com/Quantinuum/pytket-cutensornet
+  - type: SDK
+    name: pytket-qir
+    url: https://github.com/Quantinuum/pytket-qir
+  - type: SDK
+    name: qnexus (Python)
+    url: https://github.com/Quantinuum/qnexus
+  - type: SDK
+    name: Guppy
+    url: https://github.com/Quantinuum/guppylang
+  - type: SDK
+    name: HUGR
+    url: https://github.com/Quantinuum/hugr
+  - type: SDK
+    name: lambeq
+    url: https://github.com/CQCL/lambeq
+  - type: SDK
+    name: Qermit
+    url: https://github.com/Quantinuum/Qermit
+  - type: SDK
+    name: Selene
+    url: https://github.com/Quantinuum/selene
+  - type: Tool
+    name: Tierkreis Hybrid Workflow Manager
+    url: https://github.com/Quantinuum/tierkreis
+  - type: Tool
+    name: cryptomite
+    url: https://github.com/Quantinuum/cryptomite
+  - type: Data
+    name: Hardware Specifications
+    url: https://github.com/Quantinuum/quantinuum-hardware-specifications
+  - type: Data
+    name: Quantum Volume Data
+    url: https://github.com/Quantinuum/quantinuum-hardware-quantum-volume
+  - type: Documentation
+    name: PHIR Specification
+    url: https://github.com/Quantinuum/phir
+  - type: Integration
+    name: Microsoft Azure Quantum
+    url: https://learn.microsoft.com/azure/quantum/provider-quantinuum
+  - type: Integration
+    name: Quantinuum on NVIDIA CUDA-Q
+    url: https://nvidia.github.io/cuda-quantum/latest/using/backends/hardware.html
+  - type: Features
+    data:
+      - H-Series QCCD trapped-ion quantum computers (System Model H1, H2, Helios)
+      - All-to-all qubit connectivity with high two-qubit gate fidelity
+      - Mid-circuit measurement, reset, and conditional control flow
+      - Nexus cloud platform with project, team, role, quota, and credential management
+      - REST/OpenAPI surface ("Nexus OpenAPI") and `qnexus` Python client
+      - Backend brokerage to IBM Quantum, Amazon Braket, and other partner systems
+      - TKET / pytket optimizing compiler with extensive backend extensions
+      - TKET2 next-generation compiler built on HUGR
+      - Guppy Pythonic quantum-classical programming language
+      - InQuanto enterprise quantum chemistry package (VQE, QPE, advanced ansätze)
+      - lambeq QNLP toolkit (DisCoCat / DisCoCirc to quantum circuits)
+      - Qermit error-mitigation protocols (PEC, ZNE, CDR, dynamical decoupling)
+      - Selene plugin-extensible emulator for hybrid programs
+      - Quantum Origin verifiable QRNG cloud API and on-prem appliance
+      - QIR and OpenQASM 2.0 program submission formats
+      - PHIR (PECOS High-level Intermediate Representation) data model
+      - Tierkreis hybrid workflow manager
+      - Public hardware specifications and Quantum Volume datasets on GitHub
+      - Available via Microsoft Azure Quantum and NVIDIA CUDA-Q integrations
+      - Apache 2.0 open-source licensing for pytket, qnexus, lambeq, Guppy, Selene, Qermit
+    sources:
+      - https://www.quantinuum.com/
+      - https://docs.quantinuum.com/
+      - https://docs.quantinuum.com/nexus/trainings/getting_started.html
+      - https://github.com/Quantinuum
+    updated: '2026-05-24'
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
+    X: apievangelist
+    url: https://apievangelist.com
