@@ -61,11 +61,11 @@ apis:
         url: https://docs.quantinuum.com/nexus/
       - type: Documentation
         url: https://docs.quantinuum.com/nexus/trainings/getting_started.html
-      - type: SignUp
+      - type: Signup
         url: https://nexus.quantinuum.com/auth/login
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Quantinuum/qnexus
-      - type: SDK
+      - type: SDKs
         url: https://pypi.org/project/qnexus/
   - aid: quantinuum:systems
     name: Quantinuum Systems (H-Series)
@@ -114,13 +114,13 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.quantinuum.com/tket/user-guide/
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Quantinuum/tket
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Quantinuum/tket2
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Quantinuum/pytket-quantinuum
-      - type: SDK
+      - type: SDKs
         url: https://pypi.org/project/pytket/
       - type: CodeExamples
         url: https://github.com/Quantinuum/pytket-docs
@@ -161,11 +161,11 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.quantinuum.com/lambeq/intro.html
-      - type: SDK
+      - type: SDKs
         url: https://github.com/CQCL/lambeq
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Quantinuum/lambeq
-      - type: SDK
+      - type: SDKs
         url: https://pypi.org/project/lambeq/
   - aid: quantinuum:guppy
     name: Guppy
@@ -185,9 +185,9 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.quantinuum.com/guppy/getting_started.html
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Quantinuum/guppylang
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Quantinuum/hugr
   - aid: quantinuum:selene
     name: Selene
@@ -205,7 +205,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.quantinuum.com/selene/user_guide/overview.html
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Quantinuum/selene
   - aid: quantinuum:quantum-origin
     name: Quantum Origin
@@ -239,9 +239,9 @@ apis:
       - Python SDK
       - pytket
     properties:
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Quantinuum/Qermit
-      - type: SDK
+      - type: SDKs
         url: https://pypi.org/project/qermit/
 common:
   - type: Portal
@@ -252,7 +252,7 @@ common:
     url: https://github.com/Quantinuum
   - type: LinkedIn
     url: https://www.linkedin.com/company/quantinuum
-  - type: SignUp
+  - type: Signup
     url: https://nexus.quantinuum.com/auth/login
   - type: Portal
     name: Nexus Portal
@@ -266,46 +266,46 @@ common:
     url: https://www.quantinuum.com/news
   - type: Publications
     url: https://github.com/Quantinuum/quantinuum-publications
-  - type: SDK
+  - type: SDKs
     name: pytket (Python)
     url: https://github.com/Quantinuum/tket
-  - type: SDK
+  - type: SDKs
     name: pytket-quantinuum
     url: https://github.com/Quantinuum/pytket-quantinuum
-  - type: SDK
+  - type: SDKs
     name: pytket-qiskit
     url: https://github.com/Quantinuum/pytket-qiskit
-  - type: SDK
+  - type: SDKs
     name: pytket-braket
     url: https://github.com/Quantinuum/pytket-braket
-  - type: SDK
+  - type: SDKs
     name: pytket-cutensornet
     url: https://github.com/Quantinuum/pytket-cutensornet
-  - type: SDK
+  - type: SDKs
     name: pytket-qir
     url: https://github.com/Quantinuum/pytket-qir
-  - type: SDK
+  - type: SDKs
     name: qnexus (Python)
     url: https://github.com/Quantinuum/qnexus
-  - type: SDK
+  - type: SDKs
     name: Guppy
     url: https://github.com/Quantinuum/guppylang
-  - type: SDK
+  - type: SDKs
     name: HUGR
     url: https://github.com/Quantinuum/hugr
-  - type: SDK
+  - type: SDKs
     name: lambeq
     url: https://github.com/CQCL/lambeq
-  - type: SDK
+  - type: SDKs
     name: Qermit
     url: https://github.com/Quantinuum/Qermit
-  - type: SDK
+  - type: SDKs
     name: Selene
     url: https://github.com/Quantinuum/selene
-  - type: Tool
+  - type: Tools
     name: Tierkreis Hybrid Workflow Manager
     url: https://github.com/Quantinuum/tierkreis
-  - type: Tool
+  - type: Tools
     name: cryptomite
     url: https://github.com/Quantinuum/cryptomite
   - type: Data
@@ -317,10 +317,10 @@ common:
   - type: Documentation
     name: PHIR Specification
     url: https://github.com/Quantinuum/phir
-  - type: Integration
+  - type: Integrations
     name: Microsoft Azure Quantum
     url: https://learn.microsoft.com/azure/quantum/provider-quantinuum
-  - type: Integration
+  - type: Integrations
     name: Quantinuum on NVIDIA CUDA-Q
     url: https://nvidia.github.io/cuda-quantum/latest/using/backends/hardware.html
   - type: Features
