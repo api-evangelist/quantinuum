@@ -64,6 +64,14 @@ apis:
       - Cloud Platform
       - Job Submission
       - Compilation
+      - Project
+      - Team
+      - Quotas
+    tags_raw:
+      - Quantum Computing
+      - Cloud Platform
+      - Job Submission
+      - Compilation
       - Projects
       - Teams
       - Quotas
