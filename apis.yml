@@ -274,6 +274,8 @@ apis:
       - type: SDKs
         url: https://pypi.org/project/qermit/
 common:
+  - type: Website
+    url: https://www.quantinuum.com/
   - type: DomainSecurity
     url: security/quantinuum-domain-security.yml
   - type: Portal
