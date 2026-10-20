@@ -15,3 +15,51 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
+- slug: quantinuum-azure-quantum-microsoft
+  label: Azure Quantum (Microsoft)
+  partner: microsoft-quantum
+  partner_name: Azure Quantum (Microsoft)
+  type: marketplace
+  marketplace: microsoft-quantum
+  channel: distribution
+  evidence: https://learn.microsoft.com/en-us/azure/quantum/provider-quantinuum
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Azure Quantum providers (learn.microsoft.com azure/quantum qc-target-list + provider pages)
+    spec_file: null
+    role: quantum-cloud-distribution
+    registered_name: Quantinuum
+    matched_domain: quantinuum.com
+    matched_by: domain
+    domain_source: azure provider page own-site link
+    signal_note: selling QPU access through a quantum cloud is distribution, kept out of position shares
+    detected_by: sweep-quantum-computing.py
+    detected: '2026-10-20'
+  status: not-a-workflow
+  arazzo: null
+- slug: quantinuum-qed-c-quantum-economic-development-consortium
+  label: QED-C (Quantum Economic Development Consortium)
+  partner_name: QED-C (Quantum Economic Development Consortium)
+  category: quantum industry consortium
+  type: register
+  channel: standard-directory
+  evidence: https://quantumconsortium.org/members/
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: QED-C members (quantumconsortium.org/members, Corporate)
+    standard: null
+    spec_file: null
+    role: qedc-member
+    registered_name: Quantinuum
+    register_id: https://quantumconsortium.org/members/
+    member_class: Corporate
+    founding_member: true
+    matched_domain: quantinuum.com
+    matched_by: domain
+    signal_note: 'participation only: consortium membership; founding status is context, never counted'
+    detected_by: sweep-quantum-computing.py
+    detected: '2026-10-20'
+  status: not-a-workflow
+  arazzo: null
