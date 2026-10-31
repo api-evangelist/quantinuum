@@ -1,4 +1,4 @@
-# Quantinuum (quantinuum)
+# Quantinuum
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,102 +66,93 @@
 
 Quantinuum is an integrated quantum computing company formed by the 2021 merger of Honeywell Quantum Solutions and Cambridge Quantum. It builds trapped-ion (QCCD) quantum computers — the H1, H2, and Helios System Models — and develops the full software stack that runs on them: the Nexus cloud platform, the TKET quantum compiler, the InQuanto computational chemistry package, the lambeq quantum natural language processing toolkit, the Guppy quantum programming language, the Selene emulation framework, and the Quantum Origin verifiable randomness service. Programmatic access to Quantinuum systems is delivered through the Nexus platform (Python client `qnexus` plus a REST/OpenAPI surface) and via partner clouds; circuits are described in OpenQASM 2.0 and the Quantum Intermediate Representation (QIR).
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/quantinuum/refs/heads/main/apis.yml)
+**Areas:** Quantum Computing · Trapped Ion · Quantum Hardware · Quantum Software · Quantum Compiler · Quantum Chemistry · Quantum Natural Language Processing · Quantum Random Number Generator · QIR · OpenQASM · Cloud Platform
 
-## Scope
+## Quantinuum on APIs.io
 
-- **Type:** Index
-- **Position:** Producing
-- **Access:** 3rd-Party
+Everything profiled for Quantinuum is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/quantinuum/](https://apis.io/providers/quantinuum/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (9)
 
-- Quantum Computing
-- Trapped Ion
-- Quantum Hardware
-- Quantum Software
-- Quantum Compiler
-- Quantum Chemistry
-- Quantum Natural Language Processing
-- Quantum Random Number Generator
-- QIR
-- OpenQASM
-- Cloud Platform
+- [Quantinuum Nexus](https://apis.io/apis/quantinuum/nexus/) — Nexus is Quantinuum's all-in-one quantum computing cloud platform. It brokers access to Quantinuum H-Series hardware (H1, H2, Helios) and to partner…
+- [Quantinuum Systems (H-Series)](https://apis.io/apis/quantinuum/systems/) — The Quantinuum Systems API exposes the H-Series trapped-ion (QCCD) quantum computers — System Model H1, System Model H2, and the next-generation Helios —…
+- [TKET](https://apis.io/apis/quantinuum/tket/) — TKET is Quantinuum's optimizing quantum compiler. The Python interface `pytket` and the C++ core `tket` provide gate-level circuit construction,…
+- [InQuanto](https://apis.io/apis/quantinuum/inquanto/) — InQuanto is Quantinuum's computational quantum chemistry platform for molecular and materials simulations on near-term and fault-tolerant quantum computers.…
+- [lambeq](https://apis.io/apis/quantinuum/lambeq/) — lambeq is Quantinuum's open-source Python toolkit for Quantum Natural Language Processing (QNLP). It converts sentences into string diagrams (DisCoCat /…
+- [Guppy](https://apis.io/apis/quantinuum/guppy/) — Guppy (`guppylang`) is Quantinuum's Pythonic quantum-classical programming language. Guppy programs compile through the HUGR hierarchical intermediate…
+- [Selene](https://apis.io/apis/quantinuum/selene/) — Selene is Quantinuum's plugin-extensible emulator for hybrid quantum computation. It simulates the behavior of Quantinuum H-Series hardware including…
+- [Quantum Origin](https://apis.io/apis/quantinuum/quantum-origin/) — Quantum Origin is Quantinuum's verifiable quantum random number generation service, delivering cryptographically strong entropy seeded by quantum…
+- [Qermit](https://apis.io/apis/quantinuum/qermit/) — Qermit is a Python module for running error-mitigation protocols (probabilistic error cancellation, zero-noise extrapolation, Clifford data regression,…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-24
-- **Modified:** 2026-05-24
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-### Quantinuum Nexus
+Authentication, trust centre, and vulnerability disclosure.
 
-Nexus is Quantinuum's all-in-one quantum computing cloud platform — job submission, compilation, projects, teams, roles, quotas, credentials, and linked accounts — fronted by the `qnexus` Python client and a REST/OpenAPI surface.
+- [Quantinuum Domain Security](https://apis.io/security/quantinuum/quantinuum-domain-security/)
 
-**Human URL:** [https://docs.quantinuum.com/nexus/](https://docs.quantinuum.com/nexus/)
+## Where to find this API
 
-### Quantinuum Systems (H-Series)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-The H-Series trapped-ion (QCCD) quantum computers — System Model H1, System Model H2, and the next-generation Helios — exposed via QIR and OpenQASM 2.0 program submission through Nexus.
-
-**Human URL:** [https://docs.quantinuum.com/systems/](https://docs.quantinuum.com/systems/)
-
-### TKET
-
-Quantinuum's optimizing quantum compiler — `pytket` Python interface, `tket` C++ core, and the next-gen `tket2` Rust compiler built on HUGR — with backend extensions for Quantinuum, IBM Q, Amazon Braket, IQM, AQT, PennyLane, and others.
-
-**Human URL:** [https://docs.quantinuum.com/tket/](https://docs.quantinuum.com/tket/)
-
-### InQuanto
-
-Enterprise quantum chemistry platform for molecular and materials simulations (VQE, QPE, advanced ansätze, error mitigation), integrated with PySCF and Quantinuum Systems.
-
-**Human URL:** [https://docs.quantinuum.com/inquanto/](https://docs.quantinuum.com/inquanto/)
-
-### lambeq
-
-Open-source Python toolkit for Quantum Natural Language Processing (DisCoCat / DisCoCirc) under Apache 2.0.
-
-**Human URL:** [https://docs.quantinuum.com/lambeq/](https://docs.quantinuum.com/lambeq/)
-
-### Guppy
-
-Pythonic quantum-classical programming language that compiles through the HUGR hierarchical intermediate representation to Quantinuum hardware and QIR-compatible backends.
-
-**Human URL:** [https://docs.quantinuum.com/guppy/](https://docs.quantinuum.com/guppy/)
-
-### Selene
-
-Plugin-extensible emulator for hybrid quantum computation including mid-circuit measurement, conditional control flow, and QIR-defined programs.
-
-**Human URL:** [https://docs.quantinuum.com/selene/](https://docs.quantinuum.com/selene/)
-
-### Quantum Origin
-
-Verifiable quantum random number generation cloud API and on-prem appliance for PKI, key generation, and security workloads.
-
-**Human URL:** [https://docs.quantinuum.com/origin/](https://docs.quantinuum.com/origin/)
-
-### Qermit
-
-Python module for running error-mitigation protocols (PEC, ZNE, CDR, dynamical decoupling) on top of pytket.
-
-**Human URL:** [https://github.com/Quantinuum/Qermit](https://github.com/Quantinuum/Qermit)
-
-## Common Properties
-
-- [Portal](https://www.quantinuum.com/)
+- [Website](https://www.quantinuum.com/)
 - [Documentation](https://docs.quantinuum.com/)
-- [GitHub Organization](https://github.com/Quantinuum)
-- [Nexus Portal](https://nexus.quantinuum.com/)
-- [Getting Started](https://docs.quantinuum.com/nexus/trainings/getting_started.html)
+- [Getting started](https://docs.quantinuum.com/nexus/trainings/getting_started.html)
 - [Blog](https://www.quantinuum.com/news)
-- [Publications](https://github.com/Quantinuum/quantinuum-publications)
-- [Microsoft Azure Quantum integration](https://learn.microsoft.com/azure/quantum/provider-quantinuum)
+- [GitHub](https://github.com/Quantinuum)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 20.4** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** info@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 6.5 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 54.8 |
+| Access clarity | 13.2 |
+
+**Agent readiness 1.3** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/quantinuum/](https://apis.io/providers/quantinuum/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Quantinuum: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/quantinuum/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
